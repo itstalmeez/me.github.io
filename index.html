@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources\img\profilebg.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                Talmeez
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">home</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >about</a
+                    >
+                </li>
+                <li><a href="#" onclick="services(); animate6.play();">services</a></li>
+                <li><a href="#" onclick="portfolio()">portfolio</a></li>
+                <li><a href="#" onclick="blog()">Reviews</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">contact</a>
+                </li>
+            </ul>
+            <p>&copy; 2023 Talmeez.</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container">
+                            <img src="resources\img\profilebg.png" >
+
+                        </div>
+                        <h1 align="center">Talmeez Fuaad</h1>
+                        <div class="social-icons">
+                            <div class="s-icon">
+                                <a href="https://twitter.com/itstalmeez">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <div class="s-name">Tweeter</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="https://github.com/itstalmeez">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <div class="s-name">GitHub</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="https://linkedin.com/in/itstalmeez">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <div class="s-name">LinkedIn</div>
+                            </div>
+                        </div>
+
+                        <div class="side-nav">
+                            <button
+                                onclick="about(); animate3.play(); animate4.play();"
+                            >
+                                <span class="w">W</span>
+                                <span class="tooltip"> why you? </span>
+                            </button>
+                            <button onclick="services(); animate6.play();">
+                                <span class="w">W</span>
+                                <span class="tooltip"> what do you do? </span>
+                            </button>
+                            <button onclick="portfolio()">
+                                <span class="w">W</span>
+                                <span class="tooltip">
+                                    what have you done?
+                                </span>
+                            </button>
+                            <button onclick="blog()">
+                                <span class="w">W</span>
+                                <span class="tooltip"> what others say? </span>
+                            </button>
+                            <button onclick="contact(); animate5.play()">
+                                <span class="w">W</span>
+                                <span class="tooltip"> where are you? </span>
+                            </button>
+                        </div>
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+                    <!-- SEGMENT FOR STYLING. -->
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+
+                        <svg
+                            class="wave absolute"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+
+                        <svg
+                            class="wave absolute opposite"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <p>Hello,</p>
+                                <h1>I'm Talmeez</h1>
+                                <p class="text">
+                                    With a passion for technology and a desire to 
+                                    make a positive impact on society, I am studying
+                                    Artificial Intelligence at Arid University Sahiwal
+                                    Campus. My strengths include my knowledge of Python
+                                    and my focus on natural language processing. I am also
+                                    passionate about open source and love sharing my knowledge
+                                    with others. I am actively involved in Hackathons, both as a
+                                    participant and organizer. Additionally, I am currently serving
+                                    as a volunteer community builder, providing mentorship and guidance
+                                    to students on my campus and beyond.
+                                </p>
+                                <!-- <a
+                                    class="button download"
+                                    href="resources/img/bg1.png"
+                                    download="shuvro_cv"
+                                    >Download CV</a
+                                >
+                                <a
+                                    class="button hire"
+                                    href="#"
+                                    class="hire"
+                                    onclick="contact(); animate5.play()"
+                                    >Hire Me.</a
+                                > -->
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >Skills</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">Education</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">Data Analytics</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Data Manipulation</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Microsoft Power BI</div>
+                                <div class="value" style="left: 65%">65%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 65%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">TensorFlow</div>
+                                <div class="value" style="left: 50%">50%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 50%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Deep Learning</div>
+                                <div class="value" style="left: 45%">45%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 45%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Machine Leanring</div>
+                                <div class="value" style="left: 55%">55%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 55%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">July 2023 - Present</i>
+                                <h2>Data Science</h2>
+                                <i class="name_company">CodSoft</i>
+                                <article class="text_hidden">
+                                    I am a Data Science Internee at Codsoft. I 
+                                    am working on several projects.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">July 2023 - Present</i>
+                                <h2>Data Science</h2>
+                                <i class="name_company">Asterisc Technocrat</i>
+                                <article class="text_hidden">
+                                    I am a Data Science Internee at Asterisc
+                                    Technocrat. I am working on several projects.
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">July 2023 - Present</i>
+                                <h2>Data Science</h2>
+                                <i class="name_company">INTERNSAVY </i>
+                                <article class="text_hidden">
+                                    I am a Data Science Internee at INTERNSAVY.
+                                    I am working on several projects.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">August 2023 - Present</i>
+                                <h2>Artificial Intelligence</h2>
+                                <i class="name_company">Info aidTech</i>
+                                <article class="text_hidden">
+                                    I am a Data Science Internee at INTERNSAVY.
+                                    I am working on several projects.
+                                </article>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2022 - 2026</i>
+                                <h2>Bachelors of Sciences in Artificial intelligence</h2>
+                                <i class="name_company">Barani Institute of Sahiwal</i>
+                                <article class="text_hidden">
+                                    
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2020 - 2022</i>
+                                <h2>Intermediate in Computer Sciences</h2>
+                                <i class="name_company">Govt Post Graduate College Sahiwal</i>
+                                <article class="text_hidden">
+                                
+                                </article>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="services main">
+                    <!-- <section class="background">
+                        <div class="bg_wrapper"></div>
+                    </section> -->
+                    <div class="hero">
+                        <span class="typography">
+                            <span class="t_dummy">We know how to</span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front"
+                                    >take risk</span
+                                >
+                                <span class="box-side box-top"
+                                    >take a side</span
+                                >
+                                <span class="box-side box-back"
+                                    >be different</span
+                                >
+                                <span class="box-side box-bottom"
+                                    >be innovative</span
+                                >
+                            </span>
+                        </span>
+                        <p class="hero-text">
+                            Talmeez is an excellent Data Scientist, ML Engineer,
+                            Problem Solver, NLP Engineer.
+                        </p>
+                    </div>
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/elements/web_bg.png" alt="" />
+                        <p class="c_content">
+                            <span class="c_title">Data Scientist</span>
+                            Join us as we venture into the heart of Data Science,
+                            unveiling the mysteries behind the algorithms, the insights,
+                            and the transformative impact that these modern-day sorcerers
+                            have on the way we perceive, process, and utilize data.
+                            <br />
+                            <a href="https://www.linkedin.com/in/itstalmeez/">Learn More</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="capabilities right">
+                        <p class="c_content">
+                            <span class="c_title">Machine Learning</span>
+                            Driven by an unquenchable curiosity for the intersection of data,
+                            algorithms, and innovation, I am a dedicated Machine Learning Engineer
+                            on a mission to harness the power of intelligent systems. With a
+                            firm belief in the transformative capabilities of technology, I have
+                            immersed myself in the world of data-driven solutions, working
+                            diligently to bridge the gap between theory and reality.
+                            <br />
+                            <a href="https://www.linkedin.com/in/itstalmeez/">Discuss Now</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                        <img
+                            src="resources/img/elements/graphics_bg.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="capabilities left">
+                        <img
+                            src="resources/img/elements/seo_bg.png"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+                        <p class="c_content">
+                            <span class="c_title">NLP Engineer</span>
+                            As a dedicated Natural Language Processing (NLP) Engineer,
+                            I am passionate about unraveling the intricate tapestry of
+                            human communication through the lens of technology. With an
+                            insatiable curiosity for language and a deep appreciation for
+                            the art of engineering, I have embarked on a journey to bridge
+                            the gap between linguistics and machine intelligence.
+                            <br />
+                            <a href="https://www.linkedin.com/in/itstalmeez/">Discuss Now</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="foot">  
+                        <h2> Top Projects:</h2>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Titanic Survival Prediction</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources\img\TitanicSurvival.jpg"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Stock Price Prediction</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources\img\stockprice.jpg"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Bitcoin Price Prediction</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources\img\Bitcoinprice.jpg"
+                                alt="portfolio"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Wedding Couple</h1>
+                                        <span
+                                            >Category:
+                                            <span style="color: #999"
+                                                >Data Scientist</span
+                                            ></span
+                                        >
+                                    </div>
+                                    <div class="other_text">
+                                        <h2>Project Brief:</h2>
+                                        <p
+                                            class="pro_brief"
+                                            style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            "
+                                        >
+                                        The sinking of the Titanic is one of the most
+                                        infamous wrecks in history. On April 15, 1912,
+                                        during her maiden voyage, the RMS Titanic, widely
+                                        considered “unsinkable”, sank after hitting an iceberg.
+                                        Here, your challenge is to build a predictive model that
+                                        can give a solution to the question, “What types of people
+                                        were more likely to survive?” using passenger data
+                                        (i.e. name, age, sex, socio-economic class, etc.).
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2>Project Info</h2>
+                                    <p class="Date">
+                                        <b>Date: </b>
+                                        <span style="color: #999">2023</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>Client: </b>
+                                        <span style="color: #999">Asterisc Technocrat</span>
+                                    </p>
+                                    <p>
+                                        <b>Tools: </b>
+                                        <span style="color: #999"
+                                            >Python, Pandas, NumPy</span
+                                        >
+                                    </p>
+                                    <p class="link">
+                                        <b>Web: </b>
+                                        <span style="color: #999"
+                                            ><a href="#"
+                                                >github.com/itstalmeez</a
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span>Project Details</span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\billionaires.png" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\Bitcoinprice.jpg" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\covid19.png" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\instareach.png" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\stockprice.jpg" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\TitanicSurvival.jpg" alt="Data Scientist" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="resources\img\videogames.png" alt="Data Scientist" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a
+                                    class="filter active"
+                                    href="#"
+                                    data-filter="all"
+                                    >All</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter="Data-Scientist"
+                                    >Data Scientist</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".machine-learning"
+                                    >Machine Learning</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".nlp"
+                                    >NLP</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".deep-lLearning"
+                                    >Deep Learning</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".data-analytics"
+                                    >Data Analytics</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix Data Scientist">
+                            <img
+                                src="resources\img\portfolios\data scientist\billionaires.png"
+                                alt=""
+                            />
+                            <span class="title">BILLIONAIRES ANALYSIS EDA</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix NLP">
+                            <img
+                                src="resources\img\portfolios\NLP\fakenews.jpg"
+                                alt=""
+                            />
+                            <span class="title">Fake News Detection</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Scientist">
+                            <img
+                                src="resources\img\portfolios\data scientist\Bitcoinprice.jpg"
+                                alt=""
+                            />
+                            <span class="title">Bitcoin Price Prediction</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Machine Learning">
+                            <img
+                                src="resources\img\portfolios\Machine Learning\credit-score-range.jpg"
+                                alt=""
+                            />
+                            <span class="title">Credit Score Range</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix NLP">
+                            <img
+                                src="resources\img\portfolios\NLP\spam detextion.jpg"
+                                alt=""
+                            />
+                            <span class="title">Spam Detection</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Scientist">
+                            <img
+                                src="resources\img\portfolios\data scientist\covid19.png"
+                                alt=""
+                            />
+                            <span class="title">Covid 19 Impact</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix NLP">
+                            <img
+                                src="resources\img\portfolios\NLP\textsummarization.jpg"
+                                alt=""
+                            />
+                            <span class="title">Text Summarization</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Scientist">
+                            <img
+                                src="resources\img\portfolios\data scientist\stockprice.jpg"
+                                alt=""
+                            />
+                            <span class="title">Stock Price Prediction</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Analytics">
+                            <img
+                                src="resources\img\portfolios\Data Analytics\instareach.png"
+                                alt=""
+                            />
+                            <span class="title">Kitty Pic</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Deep Learning">
+                            <img
+                                src="resources\img\portfolios\Deep Learning\Dog-Breed-Identification.jpg"
+                                alt=""
+                            />
+                            <span class="title">Dog's Breed Identification</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Machine Learning">
+                            <img
+                                src="resources\img\portfolios\Machine Learning\fooddelivery.png"
+                                alt=""
+                            />
+                            <span class="title">Food Delivery</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Analytics">
+                            <img
+                                src="resources\img\portfolios\Data Analytics\videogames.png"
+                                alt=""
+                            />
+                            <span class="title">Specialisterne</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Data Analytics">
+                            <img
+                                src="resources\img\portfolios\Data Analytics\titanic.png"
+                                alt=""
+                            />
+                            <span class="title">Native Design</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix NLP">
+                            <img
+                                src="resources\img\portfolios\NLP\toxiccomments.png"
+                                alt=""
+                            />
+                            <span class="title">Toxic Comments Classification</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Deep Learning">
+                            <img
+                                src="resources\img\portfolios\Deep Learning\face detetction.jpg"
+                                alt=""
+                            />
+                            <span class="title">Face Detetction</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Deep Learning">
+                            <img
+                                src="resources\img\portfolios\Deep Learning\image classification.png"
+                                alt=""
+                            />
+                            <span class="title">Image Classification</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        
+                        <div class="mix Machine Learning">
+                            <img
+                                src="resources\img\portfolios\Machine Learning\scamdetection.jpg"
+                                alt=""
+                            />
+                            <span class="title">Scam Detection</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix Deep Learning">
+                            <img
+                                src="resources\img\portfolios\Deep Learning\music genre classification.png"
+                                alt=""
+                            />
+                            <span class="title">Music Genre Classification</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>See What My Clients Say about Me.</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Olvinex</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    I had the pleasure of working with Talmeez
+                                    on a recent project and I must say, their
+                                    expertise as a data scientist truly exceeded
+                                    my expectations. From the outset, it was evident
+                                    that I was collaborating with someone who possessed
+                                    a deep understanding of data analysis, machine
+                                    learning, and statistical modeling.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Diego Degese</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    When faced with challenging problems, Talmeez
+                                    demonstrated an impressive knack for devising
+                                    innovative solutions. Their analytical approach
+                                    and attention to detail were evident in their
+                                    data preprocessing techniques, feature engineering
+                                    strategies, and model selection process. It was
+                                    clear that they were dedicated to delivering the
+                                    most accurate and robust results possible.
+                                </p>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Daniel Bendelman</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Shuvro is an excellent web designer and
+                                    faultless technician. He’s a pleasure to
+                                    work with, great value for money and will
+                                    always go the extra mile when necessary.
+                                </p>
+                            </div> -->
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Daniel Bendelman</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Talmeez is an excellent ML Engineer and
+                                    faultless technician. It's a pleasure to
+                                    work with.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Rim Bin</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Exceptional data scientist who delivered insightful
+                                    analyses and advanced models, a true asset for data-driven
+                                    projects. A pleasure to collaborate with and highly recommended.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.ico" alt="" />
+                                <h4>Marcel Hoekstra</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Efficient data analyst, skillfully translated complex
+                                    data into actionable insights. Consistently met project
+                                    goals and added significant value to our decision-making process
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+923246155121">+923246155121</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                            <a
+                                href="https://www.google.com/maps/place/Scheme+2+Farid+Town,+Sahiwal,+Sahiwal+District,+Punjab,+Pakistan/@30.6731897,73.08602,18z/data=!4m6!3m5!1s0x3922c81d992e6481:0x710d6403806a70da!8m2!3d30.6731897!4d73.08602!16s%2Fg%2F11bw22llrw?entry=ttu"
+                            >
+                                <h3>Scheme 2 Farid Town Sahiwal</h3>
+                                <span>Sahiwal, Punjab</span><br />
+                                <span>Pakistan</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:fuaadtalmeez@gmail.com"
+                                >fuaadtalmeez@gmail.com</a
+                            >
+                        </div>
+                    </address>
+
+                    <form action="#" method="post">
+                        <h1>Get In Touch</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
